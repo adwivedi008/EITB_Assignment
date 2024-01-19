@@ -1,0 +1,18 @@
+uuid: 58446571-5415-46f7-88e3-200e94dddee0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: CT2
+type: ct2
+description: 'Use <em>CT 2</em> for content like posts having images.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

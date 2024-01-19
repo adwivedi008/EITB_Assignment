@@ -1,0 +1,24 @@
+uuid: d67881f5-7de3-4659-a8d5-603a04907057
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ct3
+  module:
+    - text
+id: node.ct3.body
+field_name: body
+entity_type: node
+bundle: ct3
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

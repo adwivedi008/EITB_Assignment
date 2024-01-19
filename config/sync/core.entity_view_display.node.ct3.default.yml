@@ -1,0 +1,39 @@
+uuid: a1fbbaaa-233f-45d9-876b-8e0a11ea18a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ct3.body
+    - field.field.node.ct3.field_paragraph
+    - node.type.ct3
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.ct3.default
+targetEntityType: node
+bundle: ct3
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

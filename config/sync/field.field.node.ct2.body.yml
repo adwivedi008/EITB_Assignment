@@ -1,0 +1,24 @@
+uuid: f8304f58-e2a5-4db0-bb2e-577be1c43305
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ct2
+  module:
+    - text
+id: node.ct2.body
+field_name: body
+entity_type: node
+bundle: ct2
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

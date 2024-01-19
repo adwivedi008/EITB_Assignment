@@ -1,0 +1,39 @@
+uuid: 38d08330-748c-4883-9bc5-81e2c6a6342d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ct2.body
+    - field.field.node.ct2.field_paragraph
+    - node.type.ct2
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.ct2.default
+targetEntityType: node
+bundle: ct2
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

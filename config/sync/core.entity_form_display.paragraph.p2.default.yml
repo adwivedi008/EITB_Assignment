@@ -1,0 +1,36 @@
+uuid: fd1a7f8f-7e44-4c66-b0ca-d42555a33804
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p2.field_description
+    - field.field.paragraph.p2.field_image
+    - paragraphs.paragraphs_type.p2
+  module:
+    - media_library
+    - text
+id: paragraph.p2.default
+targetEntityType: paragraph
+bundle: p2
+mode: default
+content:
+  field_description:
+    type: text_textarea_with_summary
+    weight: 0
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

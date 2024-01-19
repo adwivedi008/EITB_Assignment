@@ -1,0 +1,18 @@
+uuid: 49853b08-b674-47e3-9bd8-7a8b34573da2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: CT1
+type: ct1
+description: 'Use <em>CT1</em> for getting the Description field.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

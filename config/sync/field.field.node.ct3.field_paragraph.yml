@@ -1,0 +1,37 @@
+uuid: 77407bc6-ea70-4eca-a695-0f0ff459a6f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.ct3
+    - paragraphs.paragraphs_type.p3
+  module:
+    - entity_reference_revisions
+id: node.ct3.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: ct3
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      p3: p3
+    negate: 0
+    target_bundles_drag_drop:
+      p1:
+        weight: 4
+        enabled: false
+      p2:
+        weight: 5
+        enabled: false
+      p3:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,32 @@
+uuid: b6b11df2-f45b-4911-92de-242ee0ec331a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p2.field_description
+    - field.field.paragraph.p2.field_image
+    - paragraphs.paragraphs_type.p2
+  module:
+    - text
+id: paragraph.p2.default
+targetEntityType: paragraph
+bundle: p2
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

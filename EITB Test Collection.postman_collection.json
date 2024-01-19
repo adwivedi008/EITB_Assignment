@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "62039534-cadf-4838-aab6-c5c1ed85ad3e",
+		"name": "EITB Test Collection",
+		"description": "This collection contains 4 api Requests to read nodes of different content types\n\n1. Rest API to read all nodes via passing nid as a parameter.\n    \n2. Json API to read content of content type CT1.\n    \n3. Json API to read content of content type CT2.\n    \n4. Json API to read content of content type CT3.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23825772",
+		"_collection_link": "https://gold-firefly-394727.postman.co/workspace/My-Workspace~6ab40782-8eab-4866-8c87-971715524abd/collection/23825772-62039534-cadf-4838-aab6-c5c1ed85ad3e?action=share&source=collection_link&creator=23825772"
+	},
+	"item": [
+		{
+			"name": "Rest",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Adwivedi008",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "root",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1234/node/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"node",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CT 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1234/jsonapi/node/ct1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"jsonapi",
+						"node",
+						"ct1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CT 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1234/jsonapi/node/ct2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"jsonapi",
+						"node",
+						"ct2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CT 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1234/jsonapi/node/ct3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"jsonapi",
+						"node",
+						"ct3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
